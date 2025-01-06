@@ -8,7 +8,7 @@ To use this OA Robot *Command Collection*, add it as a "synchable GitHub" comman
 
 The MEWC Robot workbook contains robot command definitions that reference vba macros, lambdas, and other powerful microautomations especially designed to assist in solving or enhance performance in competing in the MEWC.
 
-[MEWC Robot.xlsm README]() includes the catalog of OA Robot command definitions included in this collection.
+[MEWC Robot.xlsm README](https://github.com/ExcelRobot/MEWC-Robot/blob/main/MEWC%20Robot.xlsm%20README/MEWC%20Robot.xlsm%20README.md) includes the catalog of OA Robot command definitions included in this collection.
 
 This collection is a work-in-progress and more commands will be added regularly.  Feel free to share, clone, use as you wish, but please help spread the word about OA Robot.
 
