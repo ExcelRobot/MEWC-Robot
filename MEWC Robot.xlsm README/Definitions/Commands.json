@@ -1,0 +1,124 @@
+{
+  "Commands": [
+    {
+      "Name": "Backup Active Sheet",
+      "Description": "Make a copy of the active sheet with \" (Backup)\" added to the sheet name.",
+      "Type": "VBAMacroCommand",
+      "LaunchCodes": [
+        "bs"
+      ],
+      "MacroExpression": "modGamePrep.BackupActiveSheet()",
+      "Tags": [
+        "Prep"
+      ]
+    },
+    {
+      "Name": "Backup All Sheets",
+      "Description": "Make a copy of all sheets with \" (Backup)\" added to each sheet name.",
+      "Type": "VBAMacroCommand",
+      "LaunchCodes": [
+        "bas"
+      ],
+      "MacroExpression": "modGamePrep.BackupAllSheets()",
+      "Tags": [
+        "Prep"
+      ]
+    },
+    {
+      "Name": "Goto Similar Background Color",
+      "Description": "Select cells in selection with same background color as active cell.",
+      "Type": "VBAMacroCommand",
+      "MacroExpression": "modGotoSpecial.GotoSimilarBackgroundColor()",
+      "Tags": [
+        "Select",
+        "Goto"
+      ]
+    },
+    {
+      "Name": "Goto Similar Constant Values",
+      "Description": "Select constant cells in selection with similar value as active cell.",
+      "Type": "VBAMacroCommand",
+      "UserContextFilter": "ExcelActiveCellIsNotEmpty",
+      "MacroExpression": "modGotoSpecial.GotoSimilarValue()",
+      "Tags": [
+        "Select",
+        "Goto"
+      ]
+    },
+    {
+      "Name": "Goto Similar Formulas",
+      "Description": "Select formula cells in selection with similar formula as active cell.",
+      "Type": "VBAMacroCommand",
+      "UserContextFilter": "ExcelActiveCellContainsFormula",
+      "MacroExpression": "modGotoSpecial.GotoSimilarFormulas()",
+      "Tags": [
+        "Select",
+        "Goto"
+      ]
+    },
+    {
+      "Name": "Name Used Ranges On All Sheets",
+      "Description": "Names the used range on each sheet in the workbook using a sanitized version of the sheet name.",
+      "Type": "VBAMacroCommand",
+      "LaunchCodes": [
+        "nur"
+      ],
+      "MacroExpression": "modGamePrep.NameUsedRangesOnAllSheets()",
+      "Tags": [
+        "Name",
+        "Prep"
+      ]
+    },
+    {
+      "Name": "Paste Count By Background Color",
+      "Description": "Pastes the count of cells in copied range by background color.",
+      "Type": "VBAMacroCommand",
+      "UserContextFilter": "ClipboardHasExcelData;ExcelActiveCellIsEmpty",
+      "MacroExpression": "modPasteSpecial.CountByBackgroundColor([[Clipboard]],[[ActiveCell]])",
+      "Tags": [
+        "Paste"
+      ]
+    },
+    {
+      "Name": "Paste Formulas Over Similar Background Colors",
+      "Description": "Paste the formulas in the copied cells over all similar background colors on the sheet as the selected cells.",
+      "Type": "VBAMacroCommand",
+      "UserContextFilter": "ClipboardHasExcelData;ExcelSelectionIsSingleArea",
+      "MacroExpression": "modPasteSpecial.PasteOverSimilarBackgroundColors([[Clipboard]],[[Selection]],True)",
+      "Tags": [
+        "Paste"
+      ]
+    },
+    {
+      "Name": "Paste Sum By Background Color",
+      "Description": "Pastes the sum of cells in copied range by background color.",
+      "Type": "VBAMacroCommand",
+      "UserContextFilter": "ClipboardHasExcelData;ExcelActiveCellIsEmpty",
+      "MacroExpression": "modPasteSpecial.SumByBackgroundColor([[Clipboard]],[[ActiveCell]])",
+      "Tags": [
+        "Paste"
+      ]
+    },
+    {
+      "Name": "Paste Values Over Similar Background Colors",
+      "Description": "Paste the values in the copied cells over all similar background colors on the sheet as the selected cells.",
+      "Type": "VBAMacroCommand",
+      "UserContextFilter": "ClipboardHasExcelData;ExcelSelectionIsSingleArea",
+      "MacroExpression": "modPasteSpecial.PasteOverSimilarBackgroundColors([[Clipboard]],[[Selection]])",
+      "Tags": [
+        "Paste"
+      ]
+    },
+    {
+      "Name": "Save Game Answer To Left",
+      "Description": "Saves references to the selected cells in the green answer cells to the left on the same row.",
+      "Type": "VBAMacroCommand",
+      "ShortCutSendKeyString": "^+s",
+      "UserContextFilter": "ExcelSelectionIsMultipleRows;ExcelSelectionIsSingleColumn",
+      "LaunchCodes": [
+        "sa"
+      ],
+      "MacroExpression": "modGamePrep.SaveAnswersToLeft()"
+    }
+  ]
+}
