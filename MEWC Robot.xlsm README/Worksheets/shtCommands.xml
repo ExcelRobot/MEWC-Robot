@@ -132,7 +132,10 @@
    ss:RefersTo="=LAMBDA(r,g,b, LET(&#10;   \\LambdaName, &quot;RGBtoColorName&quot;,&#10;   \\CommandName, &quot;Convert RGB to Color Name&quot;,&#10;   \\Description, &quot;Converts RGB integers to nearest color name in a table of 139 colors.&quot;,&#10;   \\Parameters, {&quot;r&quot;,&quot;Red RGB Integer&quot;;&quot;g&quot;,&quot;Green RGB Integer&quot;;&quot;b&quot;,&quot;Blue RGB Integer&quot;},&#10;   \\Source, &quot;Excel Robot (@ExcelRobot)&quot;,&#10;   _ColorTable, {&quot;AliceBlue&quot;,&quot;240&quot;,&quot;248&quot;,&quot;255&quot;;&quot;AntiqueWhite&quot;,&quot;250&quot;,&quot;235&quot;,&quot;215&quot;;&quot;Aqua&quot;,&quot;0&quot;,&quot;255&quot;,&quot;255&quot;;&quot;Aquamarine&quot;,&quot;127&quot;,&quot;255&quot;,&quot;212&quot;;&quot;Azure&quot;,&quot;240&quot;,&quot;255&quot;,&quot;255&quot;;&quot;Beige&quot;,&quot;245&quot;,&quot;245&quot;,&quot;220&quot;;&quot;Bisque&quot;,&quot;255&quot;,&quot;228&quot;,&quot;196&quot;;&quot;Black&quot;,&quot;0&quot;,&quot;0&quot;,&quot;0&quot;;&quot;BlanchedAlmond&quot;,&quot;255&quot;,&quot;235&quot;,&quot;205&quot;;&quot;Blue&quot;,&quot;0&quot;,&quot;0&quot;,&quot;255&quot;;&quot;BlueViolet&quot;,&quot;138&quot;,&quot;43&quot;,&quot;226&quot;;&quot;Brown&quot;,&quot;165&quot;,&quot;42&quot;,&quot;42&quot;;&quot;BurlyWood&quot;,&quot;222&quot;,&quot;184&quot;,&quot;135&quot;;&quot;CadetBlue&quot;,&quot;95&quot;,&quot;158&quot;,&quot;160&quot;;&quot;Chartreuse&quot;,&quot;127&quot;,&quot;255&quot;,&quot;0&quot;;&quot;Chocolate&quot;,&quot;210&quot;,&quot;105&quot;,&quot;30&quot;;&quot;Coral&quot;,&quot;255&quot;,&quot;127&quot;,&quot;80&quot;;&quot;CornflowerBlue&quot;,&quot;100&quot;,&quot;149&quot;,&quot;237&quot;;&quot;Cornsilk&quot;,&quot;255&quot;,&quot;248&quot;,&quot;220&quot;;&quot;Crimson&quot;,&quot;220&quot;,&quot;20&quot;,&quot;60&quot;;&quot;Cyan&quot;,&quot;0&quot;,&quot;255&quot;,&quot;255&quot;;&quot;DarkBlue&quot;,&quot;0&quot;,&quot;0&quot;,&quot;139&quot;;&quot;DarkCyan&quot;,&quot;0&quot;,&quot;139&quot;,&quot;139&quot;;&quot;DarkGoldenRod&quot;,&quot;184&quot;,&quot;134&quot;,&quot;11&quot;;&quot;DarkGray&quot;,&quot;169&quot;,&quot;169&quot;,&quot;169&quot;;&quot;DarkGreen&quot;,&quot;0&quot;,&quot;100&quot;,&quot;0&quot;;&quot;DarkKhaki&quot;,&quot;189&quot;,&quot;183&quot;,&quot;107&quot;;&quot;DarkMagenta&quot;,&quot;139&quot;,&quot;0&quot;,&quot;139&quot;;&quot;DarkOliveGreen&quot;,&quot;85&quot;,&quot;107&quot;,&quot;47&quot;;&quot;DarkOrange&quot;,&quot;255&quot;,&quot;140&quot;,&quot;0&quot;;&quot;DarkOrchid&quot;,&quot;153&quot;,&quot;50&quot;,&quot;204&quot;;&quot;DarkRed&quot;,&quot;139&quot;,&quot;0&quot;,&quot;0&quot;;&quot;DarkSalmon&quot;,&quot;233&quot;,&quot;150&quot;,&quot;122&quot;;&quot;DarkSeaGreen&quot;,&quot;143&quot;,&quot;188&quot;,&quot;143&quot;;&quot;DarkSlateBlue&quot;,&quot;72&quot;,&quot;61&quot;,&quot;139&quot;;&quot;DarkSlateGray&quot;,&quot;47&quot;,&quot;79&quot;,&quot;79&quot;;&quot;DarkTurquoise&quot;,&quot;0&quot;,&quot;206&quot;,&quot;209&quot;;&quot;DarkViolet&quot;,&quot;148&quot;,&quot;0&quot;,&quot;211&quot;;&quot;DeepPink&quot;,&quot;255&quot;,&quot;20&quot;,&quot;147&quot;;&quot;DeepSkyBlue&quot;,&quot;0&quot;,&quot;191&quot;,&quot;255&quot;;&quot;DimGray&quot;,&quot;105&quot;,&quot;105&quot;,&quot;105&quot;;&quot;DodgerBlue&quot;,&quot;30&quot;,&quot;144&quot;,&quot;255&quot;;&quot;FireBrick&quot;,&quot;178&quot;,&quot;34&quot;,&quot;34&quot;;&quot;FloralWhite&quot;,&quot;255&quot;,&quot;250&quot;,&quot;240&quot;;&quot;ForestGreen&quot;,&quot;34&quot;,&quot;139&quot;,&quot;34&quot;;&quot;Fuchsia&quot;,&quot;255&quot;,&quot;0&quot;,&quot;255&quot;;&quot;Gainsboro&quot;,&quot;220&quot;,&quot;220&quot;,&quot;220&quot;;&quot;GhostWhite&quot;,&quot;248&quot;,&quot;248&quot;,&quot;255&quot;;&quot;Gold&quot;,&quot;255&quot;,&quot;215&quot;,&quot;0&quot;;&quot;GoldenRod&quot;,&quot;218&quot;,&quot;165&quot;,&quot;32&quot;;&quot;Gray&quot;,&quot;128&quot;,&quot;128&quot;,&quot;128&quot;;&quot;Green&quot;,&quot;0&quot;,&quot;128&quot;,&quot;0&quot;;&quot;GreenYellow&quot;,&quot;173&quot;,&quot;255&quot;,&quot;47&quot;;&quot;HoneyDew&quot;,&quot;240&quot;,&quot;255&quot;,&quot;240&quot;;&quot;IndianRed&quot;,&quot; 205&quot;,&quot; 92&quot;,&quot; 92&quot;;&quot;Indigo&quot;,&quot; 75&quot;,&quot; 0&quot;,&quot; 130&quot;;&quot;Ivory&quot;,&quot; 255&quot;,&quot; 255&quot;,&quot; 240&quot;;&quot;Khaki&quot;,&quot; 240&quot;,&quot; 230&quot;,&quot; 140&quot;;&quot;Lavender&quot;,&quot; 230&quot;,&quot; 230&quot;,&quot; 250&quot;;&quot;LavenderBlush&quot;,&quot; 255&quot;,&quot; 240&quot;,&quot; 245&quot;;&quot;LawnGreen&quot;,&quot; 124&quot;,&quot; 252&quot;,&quot; 0&quot;;&quot;LemonChiffon&quot;,&quot; 255&quot;,&quot; 250&quot;,&quot; 205&quot;;&quot;LightBlue&quot;,&quot; 173&quot;,&quot; 216&quot;,&quot; 230&quot;;&quot;LightCoral&quot;,&quot; 240&quot;,&quot; 128&quot;,&quot; 128&quot;;&quot;LightCyan&quot;,&quot; 224&quot;,&quot; 255&quot;,&quot; 255&quot;;&quot;LightGoldenRodYellow&quot;,&quot; 250&quot;,&quot; 250&quot;,&quot; 210&quot;;&quot;LightGray&quot;,&quot; 211&quot;,&quot; 211&quot;,&quot; 211&quot;;&quot;LightGreen&quot;,&quot; 144&quot;,&quot; 238&quot;,&quot; 144&quot;;&quot;LightPink&quot;,&quot; 255&quot;,&quot; 182&quot;,&quot; 193&quot;;&quot;LightSalmon&quot;,&quot; 255&quot;,&quot; 160&quot;,&quot; 122&quot;;&quot;LightSeaGreen&quot;,&quot; 32&quot;,&quot; 178&quot;,&quot; 170&quot;;&quot;LightSkyBlue&quot;,&quot; 135&quot;,&quot; 206&quot;,&quot; 250&quot;;&quot;LightSlateGray&quot;,&quot; 119&quot;,&quot; 136&quot;,&quot; 153&quot;;&quot;LightSteelBlue&quot;,&quot; 176&quot;,&quot; 196&quot;,&quot; 222&quot;;&quot;LightYellow&quot;,&quot; 255&quot;,&quot; 255&quot;,&quot; 224&quot;;&quot;Lime&quot;,&quot; 0&quot;,&quot; 255&quot;,&quot; 0&quot;;&quot;LimeGreen&quot;,&quot; 50&quot;,&quot; 205&quot;,&quot; 50&quot;;&quot;Linen&quot;,&quot; 250&quot;,&quot; 240&quot;,&quot; 230&quot;;&quot;Magenta&quot;,&quot; 255&quot;,&quot; 0&quot;,&quot; 255&quot;;&quot;Maroon&quot;,&quot; 128&quot;,&quot; 0&quot;,&quot; 0&quot;;&quot;MediumAquaMarine&quot;,&quot; 102&quot;,&quot; 205&quot;,&quot; 170&quot;;&quot;MediumBlue&quot;,&quot; 0&quot;,&quot; 0&quot;,&quot; 205&quot;;&quot;MediumOrchid&quot;,&quot; 186&quot;,&quot; 85&quot;,&quot; 211&quot;;&quot;MediumPurple&quot;,&quot; 147&quot;,&quot; 112&quot;,&quot; 219&quot;;&quot;MediumSeaGreen&quot;,&quot; 60&quot;,&quot; 179&quot;,&quot; 113&quot;;&quot;MediumSlateBlue&quot;,&quot; 123&quot;,&quot; 104&quot;,&quot; 238&quot;;&quot;MediumSpringGreen&quot;,&quot; 0&quot;,&quot; 250&quot;,&quot; 154&quot;;&quot;MediumTurquoise&quot;,&quot; 72&quot;,&quot; 209&quot;,&quot; 204&quot;;&quot;MediumVioletRed&quot;,&quot; 199&quot;,&quot; 21&quot;,&quot; 133&quot;;&quot;MidnightBlue&quot;,&quot; 25&quot;,&quot; 25&quot;,&quot; 112&quot;;&quot;MintCream&quot;,&quot; 245&quot;,&quot; 255&quot;,&quot; 250&quot;;&quot;MistyRose&quot;,&quot; 255&quot;,&quot; 228&quot;,&quot; 225&quot;;&quot;Moccasin&quot;,&quot; 255&quot;,&quot; 228&quot;,&quot; 181&quot;;&quot;NavajoWhite&quot;,&quot; 255&quot;,&quot; 222&quot;,&quot; 173&quot;;&quot;Navy&quot;,&quot; 0&quot;,&quot; 0&quot;,&quot; 128&quot;;&quot;OldLace&quot;,&quot; 253&quot;,&quot; 245&quot;,&quot; 230&quot;;&quot;Olive&quot;,&quot; 128&quot;,&quot; 128&quot;,&quot; 0&quot;;&quot;OliveDrab&quot;,&quot; 107&quot;,&quot; 142&quot;,&quot; 35&quot;;&quot;Orange&quot;,&quot; 255&quot;,&quot; 165&quot;,&quot; 0&quot;;&quot;OrangeRed&quot;,&quot; 255&quot;,&quot; 69&quot;,&quot; 0&quot;;&quot;Orchid&quot;,&quot; 218&quot;,&quot; 112&quot;,&quot; 214&quot;;&quot;PaleGoldenRod&quot;,&quot; 238&quot;,&quot; 232&quot;,&quot; 170&quot;;&quot;PaleGreen&quot;,&quot; 152&quot;,&quot; 251&quot;,&quot; 152&quot;;&quot;PaleTurquoise&quot;,&quot; 175&quot;,&quot; 238&quot;,&quot; 238&quot;;&quot;PaleVioletRed&quot;,&quot; 219&quot;,&quot; 112&quot;,&quot; 147&quot;;&quot;PapayaWhip&quot;,&quot; 255&quot;,&quot; 239&quot;,&quot; 213&quot;;&quot;PeachPuff&quot;,&quot; 255&quot;,&quot; 218&quot;,&quot; 185&quot;;&quot;Peru&quot;,&quot; 205&quot;,&quot; 133&quot;,&quot; 63&quot;;&quot;Pink&quot;,&quot; 255&quot;,&quot; 192&quot;,&quot; 203&quot;;&quot;Plum&quot;,&quot; 221&quot;,&quot; 160&quot;,&quot; 221&quot;;&quot;PowderBlue&quot;,&quot; 176&quot;,&quot; 224&quot;,&quot; 230&quot;;&quot;RebeccaPurple&quot;,&quot;102&quot;,&quot;51&quot;,&quot;153&quot;;&quot;Red&quot;,&quot;255&quot;,&quot;0&quot;,&quot;0&quot;;&quot;RosyBrown&quot;,&quot;188&quot;,&quot;143&quot;,&quot;143&quot;;&quot;RoyalBlue&quot;,&quot;65&quot;,&quot;105&quot;,&quot;225&quot;;&quot;SaddleBrown&quot;,&quot;139&quot;,&quot;69&quot;,&quot;19&quot;;&quot;Salmon&quot;,&quot;250&quot;,&quot;128&quot;,&quot;114&quot;;&quot;SandyBrown&quot;,&quot;244&quot;,&quot;164&quot;,&quot;96&quot;;&quot;SeaGreen&quot;,&quot;46&quot;,&quot;139&quot;,&quot;87&quot;;&quot;Seashell&quot;,&quot;255&quot;,&quot;245&quot;,&quot;238&quot;;&quot;Sienna&quot;,&quot;160&quot;,&quot;82&quot;,&quot;45&quot;;&quot;Silver&quot;,&quot;192&quot;,&quot;192&quot;,&quot;192&quot;;&quot;SkyBlue&quot;,&quot;135&quot;,&quot;206&quot;,&quot;235&quot;;&quot;SlateBlue&quot;,&quot;106&quot;,&quot;90&quot;,&quot;205&quot;;&quot;SlateGray&quot;,&quot;112&quot;,&quot;128&quot;,&quot;144&quot;;&quot;Snow&quot;,&quot;255&quot;,&quot;250&quot;,&quot;250&quot;;&quot;SpringGreen&quot;,&quot;0&quot;,&quot;255&quot;,&quot;127&quot;;&quot;SteelBlue&quot;,&quot;70&quot;,&quot;130&quot;,&quot;180&quot;;&quot;Tan&quot;,&quot;210&quot;,&quot;180&quot;,&quot;140&quot;;&quot;Teal&quot;,&quot;0&quot;,&quot;128&quot;,&quot;128&quot;;&quot;Thistle&quot;,&quot;216&quot;,&quot;191&quot;,&quot;216&quot;;&quot;Tomato&quot;,&quot;255&quot;,&quot;99&quot;,&quot;71&quot;;&quot;Turquoise&quot;,&quot;64&quot;,&quot;224&quot;,&quot;208&quot;;&quot;Violet&quot;,&quot;238&quot;,&quot;130&quot;,&quot;238&quot;;&quot;Wheat&quot;,&quot;245&quot;,&quot;222&quot;,&quot;179&quot;;&quot;White&quot;,&quot;255&quot;,&quot;255&quot;,&quot;255&quot;;&quot;WhiteSmoke&quot;,&quot;245&quot;,&quot;245&quot;,&quot;245&quot;;&quot;Yellow&quot;,&quot;255&quot;,&quot;255&quot;,&quot;0&quot;;&quot;YellowGreen&quot;,&quot;154&quot;,&quot;205&quot;,&quot;50&quot;},&#10;   _MeanSquaredError, BYROW(&#10;      (VALUE(DROP(_ColorTable, , 1)) - HSTACK(r, g, b)) ^ 2,&#10;      LAMBDA(x, AVERAGE(x))&#10;   ),&#10;   _ClosestColors, SORTBY(TAKE(_ColorTable, , 1), _MeanSquaredError),&#10;   _Result, TAKE(_ClosestColors, 1),&#10;   _Result&#10;))"/>
  </Names>
  <Worksheet ss:Name="Commands">
-  <Table ss:ExpandedColumnCount="5" ss:ExpandedRowCount="39"
+  <Names>
+   <NamedRange ss:Name="ShowHighlights" ss:RefersTo="=TRUE"/>
+  </Names>
+  <Table ss:ExpandedColumnCount="5" ss:ExpandedRowCount="40"
    ss:DefaultColumnWidth="66" ss:DefaultRowHeight="18.75">
    <Column ss:AutoFitWidth="0" ss:Width="20.25"/>
    <Column ss:StyleID="s16" ss:Width="288.75"/>
@@ -159,10 +162,14 @@
     <Cell ss:Index="2"><Data ss:Type="String">Save Game Answers To Left</Data></Cell>
     <Cell><Data ss:Type="String">Saves references to the selected cells in the green answer cells to the left on the same row.</Data></Cell>
    </Row>
-   <Row ss:Index="10" ss:StyleID="s19">
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Create Table With Headers</Data></Cell>
+    <Cell><Data ss:Type="String">Create table from current region with headers.</Data></Cell>
+   </Row>
+   <Row ss:Index="11" ss:StyleID="s19">
     <Cell ss:Index="2"><Data ss:Type="String">Paste Special</Data></Cell>
    </Row>
-   <Row ss:Index="12">
+   <Row ss:Index="13">
     <Cell ss:Index="2"><Data ss:Type="String">Paste Count By Background Color</Data></Cell>
     <Cell><Data ss:Type="String">Pastes the number of cells in copied range by background color.</Data></Cell>
    </Row>
@@ -178,10 +185,10 @@
     <Cell ss:Index="2"><Data ss:Type="String">Paste Values Over Similar Background Colors</Data></Cell>
     <Cell><Data ss:Type="String">Paste the values in the copied cells over all similar background colors on the sheet as the selected cells.</Data></Cell>
    </Row>
-   <Row ss:Index="17" ss:StyleID="s19">
+   <Row ss:Index="18" ss:StyleID="s19">
     <Cell ss:Index="2"><Data ss:Type="String">Goto Special</Data></Cell>
    </Row>
-   <Row ss:Index="19">
+   <Row ss:Index="20">
     <Cell ss:Index="2"><Data ss:Type="String">Goto Similar Background Color</Data></Cell>
     <Cell><Data ss:Type="String">Select cells in selection with same background color as active cell.</Data></Cell>
    </Row>
@@ -193,10 +200,10 @@
     <Cell ss:Index="2"><Data ss:Type="String">Goto Similar Formulas</Data></Cell>
     <Cell><Data ss:Type="String">Select formula cells in selection with similar formula as active cell.</Data></Cell>
    </Row>
-   <Row ss:Index="23" ss:StyleID="s19">
+   <Row ss:Index="24" ss:StyleID="s19">
     <Cell ss:Index="2"><Data ss:Type="String">Data Analysis</Data></Cell>
    </Row>
-   <Row ss:Index="25">
+   <Row ss:Index="26">
     <Cell ss:Index="2"><Data ss:Type="String">Most Frequent Value In Array</Data></Cell>
     <Cell><Data ss:Type="String">Wrap with MostFrequentValue Lambda function.</Data></Cell>
    </Row>
@@ -204,10 +211,10 @@
     <Cell ss:Index="2"><Data ss:Type="String">Least Frequent Value In Array</Data></Cell>
     <Cell><Data ss:Type="String">Wrap with LeastFrequentValue Lambda function.</Data></Cell>
    </Row>
-   <Row ss:Index="28" ss:StyleID="s19">
+   <Row ss:Index="29" ss:StyleID="s19">
     <Cell ss:Index="2"><Data ss:Type="String">Grouping</Data></Cell>
    </Row>
-   <Row ss:Index="30">
+   <Row ss:Index="31">
     <Cell ss:Index="2"><Data ss:Type="String">Group By Sum</Data></Cell>
     <Cell><Data ss:Type="String">Group by first N columns and sum remaining columns.</Data></Cell>
     <Cell ss:Index="5" ss:StyleID="s20"/>
@@ -228,10 +235,10 @@
     <Cell ss:Index="2"><Data ss:Type="String">Ungroup Column By Delimiter</Data></Cell>
     <Cell><Data ss:Type="String">Splits the values in the selected column and expands the other columns.</Data></Cell>
    </Row>
-   <Row ss:Index="36" ss:StyleID="s19">
+   <Row ss:Index="37" ss:StyleID="s19">
     <Cell ss:Index="2"><Data ss:Type="String">Filtering</Data></Cell>
    </Row>
-   <Row ss:Index="38">
+   <Row ss:Index="39">
     <Cell ss:Index="2"><Data ss:Type="String">Filter By Copied Value</Data></Cell>
     <Cell><Data ss:Type="String">Filter active column by values in clipboard.</Data></Cell>
    </Row>

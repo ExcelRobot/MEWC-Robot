@@ -2,13 +2,13 @@
 
 \*\*MEWC Robot.xlsm\*\* contains definitions for:
 
-[20 Robot Commands](#command-definitions)<BR>[1 Robot Parameter](#parameter-definitions)<BR>[8 Robot Texts](#text-definitions)<BR>
+[21 Robot Commands](#command-definitions)<BR>[1 Robot Parameter](#parameter-definitions)<BR>[8 Robot Texts](#text-definitions)<BR>
 
 <BR>
 
 ## Available Robot Commands
 
-[Analysis](#analysis) | [Filter](#filter) | [Goto](#goto) | [Group](#group) | [Name](#name) | [Paste](#paste) | [Prep](#prep) | [Save](#save) | [Select](#select)
+[Analysis](#analysis) | [Filter](#filter) | [Goto](#goto) | [Group](#group) | [Name](#name) | [Paste](#paste) | [Prep](#prep) | [Save](#save) | [Select](#select) | [Other](#other)
 
 ### Analysis
 
@@ -39,7 +39,7 @@
 | [Group By Average](#group-by-average) | Groups by first N column, aggregating remaining columns with AVERAGE function. |
 | [Group By Concat With Delimiter](#group-by-concat-with-delimiter) | Groups by first N column, concatenating remaining columns with specified delimiter. |
 | [Group By Function\/Lambda](#group-by-functionlambda) | Groups by first N columns, aggregating remaining columns with specified function or lambda. |
-| [Group By Sum](#group-by-sum) | Groups by first N column, aggregating remaining columns with SUM function. |
+| [Group By Sum](#group-by-sum) | Groups by first N columns, aggregating remaining columns with SUM function. |
 | [Ungroup Column By Delimiter](#ungroup-column-by-delimiter) | Splits the values in the selected column and expands the other columns. |
 
 ### Name
@@ -78,6 +78,12 @@
 | [Goto Similar Background Color](#goto-similar-background-color) | Select cells in selection with same background color as active cell. |
 | [Goto Similar Constant Values](#goto-similar-constant-values) | Select constant cells in selection with similar value as active cell. |
 | [Goto Similar Formulas](#goto-similar-formulas) | Select formula cells in selection with similar formula as active cell. |
+
+### Other
+
+| Name | Description |
+| --- | --- |
+| [Create Table With Headers](#create-table-with-headers) | Create table from current region with headers. |
 
 <BR>
 
@@ -133,6 +139,22 @@
 | --- | --- |
 | Macro Expression | <code>[modGamePrep.BackupAllSheets](./VBA/modGamePrep.bas#L29)()</code> |
 | Launch Codes | <code>bas</code> |
+
+[^Top](#oa-robot-definitions)
+
+<BR>
+
+### Create Table With Headers
+
+*Create table from current region with headers.*
+
+<sup>`@MEWC Robot.xlsm` `!VBA Macro Command` </sup>
+
+| Property | Value |
+| --- | --- |
+| Macro Expression | <code>[modTables.CreateTableWithHeaders](./VBA/modTables.bas#L10)(True)</code> |
+| Keyboard Shortcut | <code>ctrl + t</code> |
+| User Context Filter | ExcelActiveCellIsNotEmpty OR ExcelSelectionIsMultipleRows |
 
 [^Top](#oa-robot-definitions)
 
@@ -326,7 +348,7 @@
 
 ### Group By Sum
 
-*Groups by first N column, aggregating remaining columns with SUM function.*
+*Groups by first N columns, aggregating remaining columns with SUM function.*
 
 <sup>`@MEWC Robot.xlsm` `!Excel Formula Command` `#Group`</sup>
 
@@ -494,7 +516,7 @@
 
 | Property | Value |
 | --- | --- |
-| Macro Expression | <code>[modGamePrep.SaveAnswersToLeft](./VBA/modGamePrep.bas#L225)()</code> |
+| Macro Expression | <code>[modGamePrep.SaveAnswersToLeft](./VBA/modGamePrep.bas#L79)()</code> |
 | Keyboard Shortcut | <code>^+s</code> |
 | User Context Filter | ExcelSelectionIsMultipleRows AND ExcelSelectionIsSingleColumn |
 | Launch Codes | <code>sa</code> |

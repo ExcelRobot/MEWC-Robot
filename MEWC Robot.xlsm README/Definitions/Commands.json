@@ -25,6 +25,14 @@
       ]
     },
     {
+      "Name": "Create Table With Headers",
+      "Description": "Create table from current region with headers.",
+      "Type": "VBAMacroCommand",
+      "ShortCutSendKeyString": "ctrl + t",
+      "UserContextFilter": "ExcelActiveCellIsNotEmpty|ExcelSelectionIsMultipleRows",
+      "MacroExpression": "modTables.CreateTableWithHeaders(True)"
+    },
+    {
       "Name": "Filter Array By Selected Values",
       "Description": "Wraps array formula with function returning active array filtered by selected values in a column of active array.",
       "Type": "ExcelFormulaCommand",
@@ -177,13 +185,13 @@
     },
     {
       "Name": "Group By Sum",
-      "Description": "Groups by first N column, aggregating remaining columns with SUM function.",
+      "Description": "Groups by first N columns, aggregating remaining columns with SUM function.",
       "Type": "ExcelFormulaCommand",
       "Parameters": [
         {
           "Name": "FirstNColumns",
           "Type": "InputParameter",
-          "Value": "1",
+          "Value": "2",
           "DefaultValue": "1",
           "Prompt": "Data will be grouped by the first N columns of the array and remaining columns will be aggregated.\r\n\r\nHow many columns would you like to group?"
         }
