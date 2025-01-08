@@ -25,6 +25,26 @@
       ]
     },
     {
+      "Name": "Filter Array By Selected Values",
+      "Description": "Wraps array formula with function returning active array filtered by selected values in a column of active array.",
+      "Type": "ExcelFormulaCommand",
+      "UserContextFilter": "ExcelActiveCellIsInSpillingToRange",
+      "LaunchCodes": [
+        "fa",
+        "fasv"
+      ],
+      "Formula": "=FilterArray([[ActiveCell.SpillParent::Formula]],{{Selected_Column_Indexes_In_Spilling_Range}},[[Selection::ValueArray]])",
+      "DestinationRangeAddress": "[ActiveCell.SpillParent]",
+      "Tags": [
+        "Filter"
+      ],
+      "FormulaDependencies": [
+        "IsInList.lambda",
+        "FilterArray.lambda"
+      ],
+      "UpdateFormulaDependencies": true
+    },
+    {
       "Name": "Goto Similar Background Color",
       "Description": "Select cells in selection with same background color as active cell.",
       "Type": "VBAMacroCommand",
@@ -57,6 +77,169 @@
       ]
     },
     {
+      "Name": "Group By Average",
+      "Description": "Groups by first N column, aggregating remaining columns with AVERAGE function.",
+      "Type": "ExcelFormulaCommand",
+      "Parameters": [
+        {
+          "Name": "FirstNColumns",
+          "Type": "InputParameter",
+          "Value": "1",
+          "DefaultValue": "1",
+          "Prompt": "Data will be grouped by the first N columns of the array and remaining columns will be aggregated.\r\n\r\nHow many columns would you like to group?"
+        }
+      ],
+      "UserContextFilter": "ExcelActiveCellIsInSpillingToRange",
+      "LaunchCodes": [
+        "gb"
+      ],
+      "Formula": "=GroupByFirstNColumns([[ActiveCell.SpillParent::Formula]],{{FirstNColumns}},,AVERAGE)",
+      "DestinationRangeAddress": "[[ActiveCell.SpillParent]]",
+      "Tags": [
+        "Group"
+      ],
+      "FormulaDependencies": [
+        "GroupByFirstNColumns.lambda"
+      ]
+    },
+    {
+      "Name": "Group By Concat With Delimiter",
+      "Description": "Groups by first N column, concatenating remaining columns with specified delimiter.",
+      "Type": "ExcelFormulaCommand",
+      "Parameters": [
+        {
+          "Name": "FirstNColumns",
+          "Type": "InputParameter",
+          "Value": "1",
+          "Priority": 1,
+          "DefaultValue": "1",
+          "Prompt": "Data will be grouped by the first N columns of the array and remaining columns will be aggregated.\r\n\r\nHow many columns would you like to group?"
+        },
+        {
+          "Name": "Text_Delimiter",
+          "Type": "InputParameter",
+          "Value": "|",
+          "DataType": "String",
+          "Priority": 2,
+          "DefaultValue": ",",
+          "Prompt": "Enter the delimiter:",
+          "ShowSelector": "NotAvailable"
+        }
+      ],
+      "UserContextFilter": "ExcelActiveCellIsInSpillingToRange",
+      "LaunchCodes": [
+        "gb"
+      ],
+      "Formula": "=GroupByFirstNColumns([[ActiveCell.SpillParent::Formula]],{{FirstNColumns}},,LAMBDA(x,TEXTJOIN(\"{{Text_Delimiter}}\",,x)))",
+      "DestinationRangeAddress": "[[ActiveCell.SpillParent]]",
+      "Tags": [
+        "Group"
+      ],
+      "FormulaDependencies": [
+        "GroupByFirstNColumns.lambda"
+      ]
+    },
+    {
+      "Name": "Group By Function/Lambda",
+      "Description": "Groups by first N columns, aggregating remaining columns with specified function or lambda.",
+      "Type": "ExcelFormulaCommand",
+      "Parameters": [
+        {
+          "Name": "FirstNColumns",
+          "Type": "InputParameter",
+          "Value": "1",
+          "Priority": 1,
+          "DefaultValue": "1",
+          "Prompt": "Data will be grouped by the first N columns of the array and remaining columns will be aggregated.\r\n\r\nHow many columns would you like to group?",
+          "ShowSelector": "NotAvailable"
+        },
+        {
+          "Name": "Function_Or_Lambda",
+          "Type": "InputParameter",
+          "Priority": 2,
+          "DefaultValue": "LAMBDA(x, ",
+          "Prompt": "Enter function name or define lambda:\r\n\r\nExample: MIN or LAMBDA(x,SQRT(x^2))",
+          "ShowSelector": "NotAvailable"
+        }
+      ],
+      "UserContextFilter": "ExcelActiveCellIsInSpillingToRange",
+      "LaunchCodes": [
+        "gb"
+      ],
+      "Formula": "=GroupByFirstNColumns([[ActiveCell.SpillParent::Formula]],{{FirstNColumns}},,{{Function_Or_Lambda}})",
+      "DestinationRangeAddress": "[[ActiveCell.SpillParent]]",
+      "Tags": [
+        "Group"
+      ],
+      "FormulaDependencies": [
+        "GroupByFirstNColumns.lambda"
+      ]
+    },
+    {
+      "Name": "Group By Sum",
+      "Description": "Groups by first N column, aggregating remaining columns with SUM function.",
+      "Type": "ExcelFormulaCommand",
+      "Parameters": [
+        {
+          "Name": "FirstNColumns",
+          "Type": "InputParameter",
+          "Value": "1",
+          "DefaultValue": "1",
+          "Prompt": "Data will be grouped by the first N columns of the array and remaining columns will be aggregated.\r\n\r\nHow many columns would you like to group?"
+        }
+      ],
+      "UserContextFilter": "ExcelActiveCellIsInSpillingToRange",
+      "LaunchCodes": [
+        "gb"
+      ],
+      "Formula": "=GroupByFirstNColumns([[ActiveCell.SpillParent::Formula]],{{FirstNColumns}})",
+      "DestinationRangeAddress": "[[ActiveCell.SpillParent]]",
+      "Tags": [
+        "Group"
+      ],
+      "FormulaDependencies": [
+        "GroupByFirstNColumns.lambda"
+      ]
+    },
+    {
+      "Name": "Least Frequent Value Of Array",
+      "Description": "Wrap with LeastFrequentValue Lambda function.",
+      "Type": "ExcelFormulaCommand",
+      "UserContextFilter": "ExcelActiveCellIsSpillParent;ExcelSelectionIsSingleCell",
+      "LaunchCodes": [
+        "lf",
+        "lo"
+      ],
+      "Formula": "=LeastFrequentValue([[ActiveCell::Formula]],\"\")",
+      "ScrollToDestination": false,
+      "Tags": [
+        "Analysis"
+      ],
+      "FormulaDependencies": [
+        "LeastFrequentValue.lambda"
+      ],
+      "UpdateFormulaDependencies": true
+    },
+    {
+      "Name": "Most Frequent Value Of Array",
+      "Description": "Wrap with MostFrequentValue Lambda function.",
+      "Type": "ExcelFormulaCommand",
+      "UserContextFilter": "ExcelActiveCellIsSpillParent;ExcelSelectionIsSingleCell",
+      "LaunchCodes": [
+        "mf",
+        "mo"
+      ],
+      "Formula": "=MostFrequentValue([[ActiveCell::Formula]],\"\")",
+      "ScrollToDestination": false,
+      "Tags": [
+        "Analysis"
+      ],
+      "FormulaDependencies": [
+        "MostFrequentValue.lambda"
+      ],
+      "UpdateFormulaDependencies": true
+    },
+    {
       "Name": "Name Used Ranges On All Sheets",
       "Description": "Names the used range on each sheet in the workbook using a sanitized version of the sheet name.",
       "Type": "VBAMacroCommand",
@@ -77,6 +260,24 @@
       "MacroExpression": "modPasteSpecial.CountByBackgroundColor([[Clipboard]],[[ActiveCell]])",
       "Tags": [
         "Paste"
+      ]
+    },
+    {
+      "Name": "Paste Filter Array By Copied Cell",
+      "Description": "Wraps array formula with function returning active array filtered by copied cell in a column of active array.",
+      "Type": "ExcelFormulaCommand",
+      "UserContextFilter": "ExcelActiveCellIsInSpillingToRange;ClipboardHasExcelData;ExcelCopiedRangeIsSingleCell",
+      "LaunchCodes": [
+        "pfa"
+      ],
+      "Formula": "=FilterArray([[ActiveCell.SpillParent::Formula]],{{Selected_Column_Indexes_In_Spilling_Range}},[[Clipboard]])",
+      "DestinationRangeAddress": "[ActiveCell.SpillParent]",
+      "Tags": [
+        "Filter"
+      ],
+      "FormulaDependencies": [
+        "IsInList.lambda",
+        "FilterArray.lambda"
       ]
     },
     {
@@ -118,7 +319,39 @@
       "LaunchCodes": [
         "sa"
       ],
-      "MacroExpression": "modGamePrep.SaveAnswersToLeft()"
+      "MacroExpression": "modGamePrep.SaveAnswersToLeft()",
+      "Tags": [
+        "Save"
+      ]
+    },
+    {
+      "Name": "Ungroup Column By Delimiter",
+      "Description": "Splits the values in the selected column and expands the other columns.",
+      "Type": "ExcelFormulaCommand",
+      "Parameters": [
+        {
+          "Name": "Delimiter",
+          "Type": "InputParameter",
+          "DefaultValue": ",",
+          "Prompt": "Enter the delimiter to split by:",
+          "ShowSelector": "NotAvailable"
+        }
+      ],
+      "UserContextFilter": "ExcelActiveCellIsInSpillingToRange;ExcelSelectionIsSingleCell",
+      "LaunchCodes": [
+        "ug",
+        "ugc"
+      ],
+      "Formula": "=UngroupColumn([[ActiveCell.SpillParent::Formula]],{{Active_Column_Index_In_Spilling_Range}},\"{{Delimiter}}\")",
+      "DestinationRangeAddress": "[[ActiveCell.SpillParent]]",
+      "Tags": [
+        "Group"
+      ],
+      "FormulaDependencies": [
+        "UngroupColumn.lambda",
+        "RemoveCols.lambda",
+        "InsertCols.lambda"
+      ]
     }
   ]
 }

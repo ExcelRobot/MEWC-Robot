@@ -15,65 +15,133 @@
    <NumberFormat/>
    <Protection/>
   </Style>
-  <Style ss:ID="s62">
+  <Style ss:ID="s16">
    <Font ss:FontName="Aptos Narrow" x:Family="Swiss" ss:Size="14"
     ss:Color="#000000" ss:Bold="1"/>
   </Style>
-  <Style ss:ID="s65">
+  <Style ss:ID="s17">
    <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
    <Font ss:FontName="Aptos Narrow" x:Family="Swiss" ss:Size="16"
     ss:Color="#000000" ss:Bold="1"/>
   </Style>
-  <Style ss:ID="s68">
+  <Style ss:ID="s18">
    <Font ss:FontName="Aptos Narrow" x:Family="Swiss" ss:Size="14"
     ss:Color="#000000" ss:Italic="1"/>
   </Style>
-  <Style ss:ID="s72">
+  <Style ss:ID="s19">
    <Borders>
     <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
      ss:Color="#747474"/>
    </Borders>
    <Font ss:FontName="Aptos Narrow" x:Family="Swiss" ss:Size="14"
     ss:Color="#000000" ss:Bold="1" ss:Italic="1"/>
-   <Interior/>
+  </Style>
+  <Style ss:ID="s20">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Aptos Narrow" x:Family="Swiss" ss:Size="12"
+    ss:Color="#000000"/>
   </Style>
  </Styles>
  <Names>
+  <NamedRange ss:Name="_xleta.SUM" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlop.aggregate_function" ss:RefersTo="=#NAME?"
+   ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlop.column_index" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlop.delimiter" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlop.exclude" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlop.include_grand_total" ss:RefersTo="=#NAME?"
+   ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlop.n" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlop.pad_with" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
   <NamedRange ss:Name="_xlpm.\\CommandName" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
   <NamedRange ss:Name="_xlpm.\\Description" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
   <NamedRange ss:Name="_xlpm.\\LambdaName" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
   <NamedRange ss:Name="_xlpm.\\Parameters" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
   <NamedRange ss:Name="_xlpm.\\Source" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm._Array" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
   <NamedRange ss:Name="_xlpm._ClosestColors" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm._ColIndex" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
   <NamedRange ss:Name="_xlpm._ColorTable" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm._Cols" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm._ColumnIndex" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm._ColumnsToInsert" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm._countif" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm._Delim" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm._filtered" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm._include" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm._Included" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm._Keep" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm._Keys" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
   <NamedRange ss:Name="_xlpm._MeanSquaredError" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm._PadWith" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
   <NamedRange ss:Name="_xlpm._Result" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm._RowFields" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm._Rows" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm._Seq" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm._unique" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm._Values" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm.acc" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm.aggregate_function" ss:RefersTo="=#NAME?"
+   ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm.array" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
   <NamedRange ss:Name="_xlpm.b" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm.col" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm.column_index" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm.column_indexes" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm.columns_to_insert" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm.data" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm.delimiter" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm.exclude" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm.filter_values" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
   <NamedRange ss:Name="_xlpm.g" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm.include_grand_total" ss:RefersTo="=#NAME?"
+   ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm.key" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm.keyCols" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm.list" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm.n" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm.pad_with" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm.pairs" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
   <NamedRange ss:Name="_xlpm.r" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm.Result" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm.row" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm.trimmed" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="_xlpm.valueList" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
   <NamedRange ss:Name="_xlpm.x" ss:RefersTo="=#NAME?" ss:Hidden="1"/>
+  <NamedRange ss:Name="GroupByFirstNColumns"
+   ss:RefersTo="= LAMBDA(array,[n],[include_grand_total],[aggregate_function], LET(&#10;   \\LambdaName, &quot;GroupByFirstNColumns&quot;,&#10;   n, IF(ISOMITTED(n), 1, n),&#10;   include_grand_total, IF(&#10;      ISOMITTED(include_grand_total),&#10;      0,&#10;      include_grand_total&#10;   ),&#10;   aggregate_function, IF(&#10;      ISOMITTED(aggregate_function),&#10;      SUM,&#10;      aggregate_function&#10;   ),&#10;   _RowFields, TAKE(array, , n),&#10;   _Values, DROP(array, , n),&#10;   _Result, GROUPBY(&#10;      _RowFields,&#10;      _Values,&#10;      aggregate_function,&#10;      0,&#10;      include_grand_total&#10;   ),&#10;   _Result&#10;))"/>
+  <NamedRange ss:Name="InsertCols"
+   ss:RefersTo="= LAMBDA(array,columns_to_insert,[column_index],[pad_with], LET(&#10;   \\LambdaName, &quot;InsertCols&quot;,&#10;   \\CommandName, &quot;Insert Columns Into Array&quot;,&#10;   \\Description, &quot;Given an array, inserts a second array at a specified column index.&quot;,&#10;   \\Parameters, {&quot;array&quot;,&quot;the target array within which columns will be inserted&quot;;&quot;columns_to_insert&quot;,&quot;an array with one or more columns of data to be inserted in target array&quot;;&quot;[column_index]&quot;,&quot;column index location where columns will be inserted; if negative, counts from the right; if zero (default), columns will be appended to right&quot;;&quot;[pad_with]&quot;,&quot;what to fill blanks with if columns to insert has different number of rows than array; default: #N/A&quot;},&#10;   \\Source, &quot;Excel Robot (@ExcelRobot)&quot;,&#10;   _PadWith, IF(ISOMITTED(pad_with), NA(), pad_with),&#10;   _Array, IF(&#10;      ROWS(columns_to_insert) &gt; ROWS(array),&#10;      EXPAND(array, ROWS(columns_to_insert), , _PadWith),&#10;      array&#10;   ),&#10;   _ColumnsToInsert, IF(&#10;      ROWS(_Array) &gt; ROWS(columns_to_insert),&#10;      EXPAND(columns_to_insert, ROWS(_Array), , _PadWith),&#10;      columns_to_insert&#10;   ),&#10;   _ColumnIndex, IF(@column_index &lt; 0, MAX(1, COLUMNS(_Array) + @column_index + 1), @column_index),&#10;   IFS(&#10;      _ColumnIndex = 1,&#10;      HSTACK(_ColumnsToInsert, _Array),&#10;      OR(_ColumnIndex &lt;= 0, _ColumnIndex &gt; COLUMNS(_Array)),&#10;      HSTACK(_Array, _ColumnsToInsert),&#10;      TRUE,&#10;      HSTACK(TAKE(_Array, , _ColumnIndex - 1), _ColumnsToInsert, DROP(_Array, , _ColumnIndex - 1))&#10;   )&#10;))"/>
+  <NamedRange ss:Name="IsInList"
+   ss:RefersTo="=    LAMBDA(array,list,LET(&#10;   \\LambdaName, &quot;IsInList&quot;,&#10;MAP(array,LAMBDA(x,OR(list=x))))&#10;)"/>
+  <NamedRange ss:Name="LeastFrequentValue"
+   ss:RefersTo="= LAMBDA(array,[exclude], LET(&#10;   \\LambdaName, &quot;LeastFrequent&quot;,&#10;   _unique, UNIQUE(TOCOL(IF(array = &quot;&quot;, &quot;&quot;, array))),&#10;   _include, BYROW(_unique &lt;&gt; TOROW(exclude), LAMBDA(x, PRODUCT(N(x)))),&#10;   _filtered, IF(ISOMITTED(exclude), _unique, FILTER(_unique, _include)),&#10;   _countif, MAP(_filtered, LAMBDA(x, SUM(N(array = x)))),&#10;   Result, TAKE(SORTBY(_filtered, _countif, 1), 1),&#10;   Result&#10;))"/>
+  <NamedRange ss:Name="MostFrequentValue"
+   ss:RefersTo="= LAMBDA(array,[exclude], LET(&#10;   \\LambdaName, &quot;MostFrequentValue&quot;,&#10;   \\CommandName, &quot;Most Frequent Value&quot;,&#10;   \\Description, &quot;Returns the most frequent value in an array.&quot;,&#10;   _unique, UNIQUE(TOCOL(IF(array = &quot;&quot;, &quot;&quot;, array))),&#10;   _include, BYROW(_unique &lt;&gt; TOROW(exclude), LAMBDA(x, PRODUCT(N(x)))),&#10;   _filtered, IF(ISOMITTED(exclude), _unique, FILTER(_unique, _include)),&#10;   _countif, MAP(_filtered, LAMBDA(x, SUM(N(array = x)))),&#10;   Result, TAKE(SORTBY(_filtered, _countif, -1), 1),&#10;   Result&#10;))"/>
+  <NamedRange ss:Name="RemoveCols"
+   ss:RefersTo="= LAMBDA(array,column_indexes, LET(&#10;   \\LambdaName, &quot;RemoveCols&quot;,&#10;   \\CommandName, &quot;Remove Columns Of Array&quot;,&#10;   \\Description, &quot;Removes specified columns of array using RemoveCols lambda.&quot;,&#10;   _Seq, SEQUENCE(COLUMNS(array)),&#10;   _Keep, ISERROR(MATCH(_Seq, TOROW(column_indexes), 0)),&#10;   _Included, FILTER(_Seq, _Keep, TRUE),&#10;   _Result, CHOOSECOLS(array, _Included),&#10;   _Result&#10;))"/>
   <NamedRange ss:Name="RGBtoColorName"
    ss:RefersTo="=LAMBDA(r,g,b, LET(&#10;   \\LambdaName, &quot;RGBtoColorName&quot;,&#10;   \\CommandName, &quot;Convert RGB to Color Name&quot;,&#10;   \\Description, &quot;Converts RGB integers to nearest color name in a table of 139 colors.&quot;,&#10;   \\Parameters, {&quot;r&quot;,&quot;Red RGB Integer&quot;;&quot;g&quot;,&quot;Green RGB Integer&quot;;&quot;b&quot;,&quot;Blue RGB Integer&quot;},&#10;   \\Source, &quot;Excel Robot (@ExcelRobot)&quot;,&#10;   _ColorTable, {&quot;AliceBlue&quot;,&quot;240&quot;,&quot;248&quot;,&quot;255&quot;;&quot;AntiqueWhite&quot;,&quot;250&quot;,&quot;235&quot;,&quot;215&quot;;&quot;Aqua&quot;,&quot;0&quot;,&quot;255&quot;,&quot;255&quot;;&quot;Aquamarine&quot;,&quot;127&quot;,&quot;255&quot;,&quot;212&quot;;&quot;Azure&quot;,&quot;240&quot;,&quot;255&quot;,&quot;255&quot;;&quot;Beige&quot;,&quot;245&quot;,&quot;245&quot;,&quot;220&quot;;&quot;Bisque&quot;,&quot;255&quot;,&quot;228&quot;,&quot;196&quot;;&quot;Black&quot;,&quot;0&quot;,&quot;0&quot;,&quot;0&quot;;&quot;BlanchedAlmond&quot;,&quot;255&quot;,&quot;235&quot;,&quot;205&quot;;&quot;Blue&quot;,&quot;0&quot;,&quot;0&quot;,&quot;255&quot;;&quot;BlueViolet&quot;,&quot;138&quot;,&quot;43&quot;,&quot;226&quot;;&quot;Brown&quot;,&quot;165&quot;,&quot;42&quot;,&quot;42&quot;;&quot;BurlyWood&quot;,&quot;222&quot;,&quot;184&quot;,&quot;135&quot;;&quot;CadetBlue&quot;,&quot;95&quot;,&quot;158&quot;,&quot;160&quot;;&quot;Chartreuse&quot;,&quot;127&quot;,&quot;255&quot;,&quot;0&quot;;&quot;Chocolate&quot;,&quot;210&quot;,&quot;105&quot;,&quot;30&quot;;&quot;Coral&quot;,&quot;255&quot;,&quot;127&quot;,&quot;80&quot;;&quot;CornflowerBlue&quot;,&quot;100&quot;,&quot;149&quot;,&quot;237&quot;;&quot;Cornsilk&quot;,&quot;255&quot;,&quot;248&quot;,&quot;220&quot;;&quot;Crimson&quot;,&quot;220&quot;,&quot;20&quot;,&quot;60&quot;;&quot;Cyan&quot;,&quot;0&quot;,&quot;255&quot;,&quot;255&quot;;&quot;DarkBlue&quot;,&quot;0&quot;,&quot;0&quot;,&quot;139&quot;;&quot;DarkCyan&quot;,&quot;0&quot;,&quot;139&quot;,&quot;139&quot;;&quot;DarkGoldenRod&quot;,&quot;184&quot;,&quot;134&quot;,&quot;11&quot;;&quot;DarkGray&quot;,&quot;169&quot;,&quot;169&quot;,&quot;169&quot;;&quot;DarkGreen&quot;,&quot;0&quot;,&quot;100&quot;,&quot;0&quot;;&quot;DarkKhaki&quot;,&quot;189&quot;,&quot;183&quot;,&quot;107&quot;;&quot;DarkMagenta&quot;,&quot;139&quot;,&quot;0&quot;,&quot;139&quot;;&quot;DarkOliveGreen&quot;,&quot;85&quot;,&quot;107&quot;,&quot;47&quot;;&quot;DarkOrange&quot;,&quot;255&quot;,&quot;140&quot;,&quot;0&quot;;&quot;DarkOrchid&quot;,&quot;153&quot;,&quot;50&quot;,&quot;204&quot;;&quot;DarkRed&quot;,&quot;139&quot;,&quot;0&quot;,&quot;0&quot;;&quot;DarkSalmon&quot;,&quot;233&quot;,&quot;150&quot;,&quot;122&quot;;&quot;DarkSeaGreen&quot;,&quot;143&quot;,&quot;188&quot;,&quot;143&quot;;&quot;DarkSlateBlue&quot;,&quot;72&quot;,&quot;61&quot;,&quot;139&quot;;&quot;DarkSlateGray&quot;,&quot;47&quot;,&quot;79&quot;,&quot;79&quot;;&quot;DarkTurquoise&quot;,&quot;0&quot;,&quot;206&quot;,&quot;209&quot;;&quot;DarkViolet&quot;,&quot;148&quot;,&quot;0&quot;,&quot;211&quot;;&quot;DeepPink&quot;,&quot;255&quot;,&quot;20&quot;,&quot;147&quot;;&quot;DeepSkyBlue&quot;,&quot;0&quot;,&quot;191&quot;,&quot;255&quot;;&quot;DimGray&quot;,&quot;105&quot;,&quot;105&quot;,&quot;105&quot;;&quot;DodgerBlue&quot;,&quot;30&quot;,&quot;144&quot;,&quot;255&quot;;&quot;FireBrick&quot;,&quot;178&quot;,&quot;34&quot;,&quot;34&quot;;&quot;FloralWhite&quot;,&quot;255&quot;,&quot;250&quot;,&quot;240&quot;;&quot;ForestGreen&quot;,&quot;34&quot;,&quot;139&quot;,&quot;34&quot;;&quot;Fuchsia&quot;,&quot;255&quot;,&quot;0&quot;,&quot;255&quot;;&quot;Gainsboro&quot;,&quot;220&quot;,&quot;220&quot;,&quot;220&quot;;&quot;GhostWhite&quot;,&quot;248&quot;,&quot;248&quot;,&quot;255&quot;;&quot;Gold&quot;,&quot;255&quot;,&quot;215&quot;,&quot;0&quot;;&quot;GoldenRod&quot;,&quot;218&quot;,&quot;165&quot;,&quot;32&quot;;&quot;Gray&quot;,&quot;128&quot;,&quot;128&quot;,&quot;128&quot;;&quot;Green&quot;,&quot;0&quot;,&quot;128&quot;,&quot;0&quot;;&quot;GreenYellow&quot;,&quot;173&quot;,&quot;255&quot;,&quot;47&quot;;&quot;HoneyDew&quot;,&quot;240&quot;,&quot;255&quot;,&quot;240&quot;;&quot;IndianRed&quot;,&quot; 205&quot;,&quot; 92&quot;,&quot; 92&quot;;&quot;Indigo&quot;,&quot; 75&quot;,&quot; 0&quot;,&quot; 130&quot;;&quot;Ivory&quot;,&quot; 255&quot;,&quot; 255&quot;,&quot; 240&quot;;&quot;Khaki&quot;,&quot; 240&quot;,&quot; 230&quot;,&quot; 140&quot;;&quot;Lavender&quot;,&quot; 230&quot;,&quot; 230&quot;,&quot; 250&quot;;&quot;LavenderBlush&quot;,&quot; 255&quot;,&quot; 240&quot;,&quot; 245&quot;;&quot;LawnGreen&quot;,&quot; 124&quot;,&quot; 252&quot;,&quot; 0&quot;;&quot;LemonChiffon&quot;,&quot; 255&quot;,&quot; 250&quot;,&quot; 205&quot;;&quot;LightBlue&quot;,&quot; 173&quot;,&quot; 216&quot;,&quot; 230&quot;;&quot;LightCoral&quot;,&quot; 240&quot;,&quot; 128&quot;,&quot; 128&quot;;&quot;LightCyan&quot;,&quot; 224&quot;,&quot; 255&quot;,&quot; 255&quot;;&quot;LightGoldenRodYellow&quot;,&quot; 250&quot;,&quot; 250&quot;,&quot; 210&quot;;&quot;LightGray&quot;,&quot; 211&quot;,&quot; 211&quot;,&quot; 211&quot;;&quot;LightGreen&quot;,&quot; 144&quot;,&quot; 238&quot;,&quot; 144&quot;;&quot;LightPink&quot;,&quot; 255&quot;,&quot; 182&quot;,&quot; 193&quot;;&quot;LightSalmon&quot;,&quot; 255&quot;,&quot; 160&quot;,&quot; 122&quot;;&quot;LightSeaGreen&quot;,&quot; 32&quot;,&quot; 178&quot;,&quot; 170&quot;;&quot;LightSkyBlue&quot;,&quot; 135&quot;,&quot; 206&quot;,&quot; 250&quot;;&quot;LightSlateGray&quot;,&quot; 119&quot;,&quot; 136&quot;,&quot; 153&quot;;&quot;LightSteelBlue&quot;,&quot; 176&quot;,&quot; 196&quot;,&quot; 222&quot;;&quot;LightYellow&quot;,&quot; 255&quot;,&quot; 255&quot;,&quot; 224&quot;;&quot;Lime&quot;,&quot; 0&quot;,&quot; 255&quot;,&quot; 0&quot;;&quot;LimeGreen&quot;,&quot; 50&quot;,&quot; 205&quot;,&quot; 50&quot;;&quot;Linen&quot;,&quot; 250&quot;,&quot; 240&quot;,&quot; 230&quot;;&quot;Magenta&quot;,&quot; 255&quot;,&quot; 0&quot;,&quot; 255&quot;;&quot;Maroon&quot;,&quot; 128&quot;,&quot; 0&quot;,&quot; 0&quot;;&quot;MediumAquaMarine&quot;,&quot; 102&quot;,&quot; 205&quot;,&quot; 170&quot;;&quot;MediumBlue&quot;,&quot; 0&quot;,&quot; 0&quot;,&quot; 205&quot;;&quot;MediumOrchid&quot;,&quot; 186&quot;,&quot; 85&quot;,&quot; 211&quot;;&quot;MediumPurple&quot;,&quot; 147&quot;,&quot; 112&quot;,&quot; 219&quot;;&quot;MediumSeaGreen&quot;,&quot; 60&quot;,&quot; 179&quot;,&quot; 113&quot;;&quot;MediumSlateBlue&quot;,&quot; 123&quot;,&quot; 104&quot;,&quot; 238&quot;;&quot;MediumSpringGreen&quot;,&quot; 0&quot;,&quot; 250&quot;,&quot; 154&quot;;&quot;MediumTurquoise&quot;,&quot; 72&quot;,&quot; 209&quot;,&quot; 204&quot;;&quot;MediumVioletRed&quot;,&quot; 199&quot;,&quot; 21&quot;,&quot; 133&quot;;&quot;MidnightBlue&quot;,&quot; 25&quot;,&quot; 25&quot;,&quot; 112&quot;;&quot;MintCream&quot;,&quot; 245&quot;,&quot; 255&quot;,&quot; 250&quot;;&quot;MistyRose&quot;,&quot; 255&quot;,&quot; 228&quot;,&quot; 225&quot;;&quot;Moccasin&quot;,&quot; 255&quot;,&quot; 228&quot;,&quot; 181&quot;;&quot;NavajoWhite&quot;,&quot; 255&quot;,&quot; 222&quot;,&quot; 173&quot;;&quot;Navy&quot;,&quot; 0&quot;,&quot; 0&quot;,&quot; 128&quot;;&quot;OldLace&quot;,&quot; 253&quot;,&quot; 245&quot;,&quot; 230&quot;;&quot;Olive&quot;,&quot; 128&quot;,&quot; 128&quot;,&quot; 0&quot;;&quot;OliveDrab&quot;,&quot; 107&quot;,&quot; 142&quot;,&quot; 35&quot;;&quot;Orange&quot;,&quot; 255&quot;,&quot; 165&quot;,&quot; 0&quot;;&quot;OrangeRed&quot;,&quot; 255&quot;,&quot; 69&quot;,&quot; 0&quot;;&quot;Orchid&quot;,&quot; 218&quot;,&quot; 112&quot;,&quot; 214&quot;;&quot;PaleGoldenRod&quot;,&quot; 238&quot;,&quot; 232&quot;,&quot; 170&quot;;&quot;PaleGreen&quot;,&quot; 152&quot;,&quot; 251&quot;,&quot; 152&quot;;&quot;PaleTurquoise&quot;,&quot; 175&quot;,&quot; 238&quot;,&quot; 238&quot;;&quot;PaleVioletRed&quot;,&quot; 219&quot;,&quot; 112&quot;,&quot; 147&quot;;&quot;PapayaWhip&quot;,&quot; 255&quot;,&quot; 239&quot;,&quot; 213&quot;;&quot;PeachPuff&quot;,&quot; 255&quot;,&quot; 218&quot;,&quot; 185&quot;;&quot;Peru&quot;,&quot; 205&quot;,&quot; 133&quot;,&quot; 63&quot;;&quot;Pink&quot;,&quot; 255&quot;,&quot; 192&quot;,&quot; 203&quot;;&quot;Plum&quot;,&quot; 221&quot;,&quot; 160&quot;,&quot; 221&quot;;&quot;PowderBlue&quot;,&quot; 176&quot;,&quot; 224&quot;,&quot; 230&quot;;&quot;RebeccaPurple&quot;,&quot;102&quot;,&quot;51&quot;,&quot;153&quot;;&quot;Red&quot;,&quot;255&quot;,&quot;0&quot;,&quot;0&quot;;&quot;RosyBrown&quot;,&quot;188&quot;,&quot;143&quot;,&quot;143&quot;;&quot;RoyalBlue&quot;,&quot;65&quot;,&quot;105&quot;,&quot;225&quot;;&quot;SaddleBrown&quot;,&quot;139&quot;,&quot;69&quot;,&quot;19&quot;;&quot;Salmon&quot;,&quot;250&quot;,&quot;128&quot;,&quot;114&quot;;&quot;SandyBrown&quot;,&quot;244&quot;,&quot;164&quot;,&quot;96&quot;;&quot;SeaGreen&quot;,&quot;46&quot;,&quot;139&quot;,&quot;87&quot;;&quot;Seashell&quot;,&quot;255&quot;,&quot;245&quot;,&quot;238&quot;;&quot;Sienna&quot;,&quot;160&quot;,&quot;82&quot;,&quot;45&quot;;&quot;Silver&quot;,&quot;192&quot;,&quot;192&quot;,&quot;192&quot;;&quot;SkyBlue&quot;,&quot;135&quot;,&quot;206&quot;,&quot;235&quot;;&quot;SlateBlue&quot;,&quot;106&quot;,&quot;90&quot;,&quot;205&quot;;&quot;SlateGray&quot;,&quot;112&quot;,&quot;128&quot;,&quot;144&quot;;&quot;Snow&quot;,&quot;255&quot;,&quot;250&quot;,&quot;250&quot;;&quot;SpringGreen&quot;,&quot;0&quot;,&quot;255&quot;,&quot;127&quot;;&quot;SteelBlue&quot;,&quot;70&quot;,&quot;130&quot;,&quot;180&quot;;&quot;Tan&quot;,&quot;210&quot;,&quot;180&quot;,&quot;140&quot;;&quot;Teal&quot;,&quot;0&quot;,&quot;128&quot;,&quot;128&quot;;&quot;Thistle&quot;,&quot;216&quot;,&quot;191&quot;,&quot;216&quot;;&quot;Tomato&quot;,&quot;255&quot;,&quot;99&quot;,&quot;71&quot;;&quot;Turquoise&quot;,&quot;64&quot;,&quot;224&quot;,&quot;208&quot;;&quot;Violet&quot;,&quot;238&quot;,&quot;130&quot;,&quot;238&quot;;&quot;Wheat&quot;,&quot;245&quot;,&quot;222&quot;,&quot;179&quot;;&quot;White&quot;,&quot;255&quot;,&quot;255&quot;,&quot;255&quot;;&quot;WhiteSmoke&quot;,&quot;245&quot;,&quot;245&quot;,&quot;245&quot;;&quot;Yellow&quot;,&quot;255&quot;,&quot;255&quot;,&quot;0&quot;;&quot;YellowGreen&quot;,&quot;154&quot;,&quot;205&quot;,&quot;50&quot;},&#10;   _MeanSquaredError, BYROW(&#10;      (VALUE(DROP(_ColorTable, , 1)) - HSTACK(r, g, b)) ^ 2,&#10;      LAMBDA(x, AVERAGE(x))&#10;   ),&#10;   _ClosestColors, SORTBY(TAKE(_ColorTable, , 1), _MeanSquaredError),&#10;   _Result, TAKE(_ClosestColors, 1),&#10;   _Result&#10;))"/>
  </Names>
  <Worksheet ss:Name="Commands">
-  <Table ss:ExpandedColumnCount="3" ss:ExpandedRowCount="23"
+  <Table ss:ExpandedColumnCount="5" ss:ExpandedRowCount="39"
    ss:DefaultColumnWidth="66" ss:DefaultRowHeight="18.75">
    <Column ss:AutoFitWidth="0" ss:Width="20.25"/>
-   <Column ss:StyleID="s62" ss:Width="288.75"/>
-   <Column ss:StyleID="s68" ss:Width="627.75"/>
+   <Column ss:StyleID="s16" ss:Width="288.75"/>
+   <Column ss:StyleID="s18" ss:Width="627.75"/>
    <Row ss:Height="21">
-    <Cell ss:StyleID="s65"><Data ss:Type="String">MEWC Robot</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">MEWC Robot</Data></Cell>
    </Row>
-   <Row ss:Index="3" ss:StyleID="s72">
+   <Row ss:Index="3" ss:StyleID="s19">
     <Cell ss:Index="2"><Data ss:Type="String">Game Prep</Data></Cell>
    </Row>
    <Row ss:Index="5">
     <Cell ss:Index="2"><Data ss:Type="String">Backup Active Sheet</Data></Cell>
-    <Cell><Data ss:Type="String">Make a copy of the active sheet with \ (Backup)\ added to the sheet name.</Data></Cell>
+    <Cell><Data ss:Type="String">Make a copy of the active sheet with &quot; (Backup)&quot; added to the sheet name.</Data></Cell>
    </Row>
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">Backup All Sheets</Data></Cell>
-    <Cell><Data ss:Type="String">Make copies of all sheets with \ (Backup)\ added to each sheet name.</Data></Cell>
+    <Cell><Data ss:Type="String">Make copies of all sheets with &quot; (Backup)&quot; added to each sheet name.</Data></Cell>
    </Row>
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">Name Used Ranges On All Sheets</Data></Cell>
@@ -83,10 +151,10 @@
     <Cell ss:Index="2"><Data ss:Type="String">Save Game Answers To Left</Data></Cell>
     <Cell><Data ss:Type="String">Saves references to the selected cells in the green answer cells to the left on the same row.</Data></Cell>
    </Row>
-   <Row ss:Index="11" ss:StyleID="s72">
+   <Row ss:Index="10" ss:StyleID="s19">
     <Cell ss:Index="2"><Data ss:Type="String">Paste Special</Data></Cell>
    </Row>
-   <Row ss:Index="13">
+   <Row ss:Index="12">
     <Cell ss:Index="2"><Data ss:Type="String">Paste Count By Background Color</Data></Cell>
     <Cell><Data ss:Type="String">Pastes the number of cells in copied range by background color.</Data></Cell>
    </Row>
@@ -102,10 +170,10 @@
     <Cell ss:Index="2"><Data ss:Type="String">Paste Values Over Similar Background Colors</Data></Cell>
     <Cell><Data ss:Type="String">Paste the values in the copied cells over all similar background colors on the sheet as the selected cells.</Data></Cell>
    </Row>
-   <Row ss:Index="19" ss:StyleID="s72">
+   <Row ss:Index="17" ss:StyleID="s19">
     <Cell ss:Index="2"><Data ss:Type="String">Goto Special</Data></Cell>
    </Row>
-   <Row ss:Index="21">
+   <Row ss:Index="19">
     <Cell ss:Index="2"><Data ss:Type="String">Goto Similar Background Color</Data></Cell>
     <Cell><Data ss:Type="String">Select cells in selection with same background color as active cell.</Data></Cell>
    </Row>
@@ -116,6 +184,52 @@
    <Row>
     <Cell ss:Index="2"><Data ss:Type="String">Goto Similar Formulas</Data></Cell>
     <Cell><Data ss:Type="String">Select formula cells in selection with similar formula as active cell.</Data></Cell>
+   </Row>
+   <Row ss:Index="23" ss:StyleID="s19">
+    <Cell ss:Index="2"><Data ss:Type="String">Data Analysis</Data></Cell>
+   </Row>
+   <Row ss:Index="25">
+    <Cell ss:Index="2"><Data ss:Type="String">Most Frequent Value In Array</Data></Cell>
+    <Cell><Data ss:Type="String">Wrap with MostFrequentValue Lambda function.</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Least Frequent Value In Array</Data></Cell>
+    <Cell><Data ss:Type="String">Wrap with LeastFrequentValue Lambda function.</Data></Cell>
+   </Row>
+   <Row ss:Index="28" ss:StyleID="s19">
+    <Cell ss:Index="2"><Data ss:Type="String">Grouping</Data></Cell>
+   </Row>
+   <Row ss:Index="30">
+    <Cell ss:Index="2"><Data ss:Type="String">Group By Sum</Data></Cell>
+    <Cell><Data ss:Type="String">Group by first N columns and sum remaining columns.</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s20"/>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Group By Average</Data></Cell>
+    <Cell><Data ss:Type="String">Group by first N columns and average remaining column.</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Group By Concat With Delimiter</Data></Cell>
+    <Cell><Data ss:Type="String">Group by first N columns and concat remaining columns with specified delimiter.</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Group By Function/Lambda</Data></Cell>
+    <Cell><Data ss:Type="String">Group by first N columns and aggregates remaining columns with specified function name or lambda.</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Ungroup Column By Delimiter</Data></Cell>
+    <Cell><Data ss:Type="String">Splits the values in the selected column and expands the other columns.</Data></Cell>
+   </Row>
+   <Row ss:Index="36" ss:StyleID="s19">
+    <Cell ss:Index="2"><Data ss:Type="String">Filtering</Data></Cell>
+   </Row>
+   <Row ss:Index="38">
+    <Cell ss:Index="2"><Data ss:Type="String">Filter By Copied Value</Data></Cell>
+    <Cell><Data ss:Type="String">Filter active column by values in clipboard.</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">Paste Filter Array By Copied Cell</Data></Cell>
+    <Cell><Data ss:Type="String">Wraps array formula with function returning active array filtered by copied cell in a column of active array.</Data></Cell>
    </Row>
   </Table>
  </Worksheet>

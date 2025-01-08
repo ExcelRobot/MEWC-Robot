@@ -1,0 +1,27 @@
+InsertCols =  LAMBDA(array,columns_to_insert,[column_index],[pad_with], LET(
+   \\LambdaName, "InsertCols",
+   \\CommandName, "Insert Columns Into Array",
+   \\Description, "Given an array, inserts a second array at a specified column index.",
+   \\Parameters, {"array","the target array within which columns will be inserted";"columns_to_insert","an array with one or more columns of data to be inserted in target array";"[column_index]","column index location where columns will be inserted; if negative, counts from the right; if zero (default), columns will be appended to right";"[pad_with]","what to fill blanks with if columns to insert has different number of rows than array; default: #N/A"},
+   \\Source, "Excel Robot (@ExcelRobot)",
+   _PadWith, IF(ISOMITTED(pad_with), NA(), pad_with),
+   _Array, IF(
+      ROWS(columns_to_insert) > ROWS(array),
+      EXPAND(array, ROWS(columns_to_insert), , _PadWith),
+      array
+   ),
+   _ColumnsToInsert, IF(
+      ROWS(_Array) > ROWS(columns_to_insert),
+      EXPAND(columns_to_insert, ROWS(_Array), , _PadWith),
+      columns_to_insert
+   ),
+   _ColumnIndex, IF(@column_index < 0, MAX(1, COLUMNS(_Array) + @column_index + 1), @column_index),
+   IFS(
+      _ColumnIndex = 1,
+      HSTACK(_ColumnsToInsert, _Array),
+      OR(_ColumnIndex <= 0, _ColumnIndex > COLUMNS(_Array)),
+      HSTACK(_Array, _ColumnsToInsert),
+      TRUE,
+      HSTACK(TAKE(_Array, , _ColumnIndex - 1), _ColumnsToInsert, DROP(_Array, , _ColumnIndex - 1))
+   )
+));

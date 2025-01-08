@@ -244,12 +244,12 @@ Sub SaveAnswersToLeft()
         calcMode = Application.Calculation
         Application.Calculation = xlCalculationManual
         For Each cell In Selection
-            If Cells(cell.Row, greenCol).Interior.Color = MEWC_GREEN Then
-                Cells(cell.Row, greenCol).Formula = "=" & cell.Address(False, False)
+            If Cells(cell.row, greenCol).Interior.Color = MEWC_GREEN Then
+                Cells(cell.row, greenCol).Formula = "=" & cell.Address(False, False)
                 If dest Is Nothing Then
-                    Set dest = Cells(cell.Row, greenCol)
+                    Set dest = Cells(cell.row, greenCol)
                 Else
-                    Set dest = Union(dest, Cells(cell.Row, greenCol))
+                    Set dest = Union(dest, Cells(cell.row, greenCol))
                 End If
             End If
         Next

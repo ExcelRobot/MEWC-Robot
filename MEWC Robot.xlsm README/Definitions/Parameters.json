@@ -1,0 +1,11 @@
+{
+  "Parameters": [
+    {
+      "Name": "Active_Column_Index_In_Spilling_Range",
+      "Description": "Returns the index of the active cell column within the spill range.",
+      "Type": "VBAMacroParameter",
+      "DataType": "Integer",
+      "MacroExpression": "modRange.ActiveColumnIndexInSpillingRange([[ActiveCell]])"
+    }
+  ]
+}

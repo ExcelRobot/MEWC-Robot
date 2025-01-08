@@ -1,0 +1,10 @@
+RemoveCols = LAMBDA(array,column_indexes, LET(
+   \\LambdaName, "RemoveCols",
+   \\CommandName, "Remove Columns Of Array",
+   \\Description, "Removes specified columns of array using RemoveCols lambda.",
+   _Seq, SEQUENCE(COLUMNS(array)),
+   _Keep, ISERROR(MATCH(_Seq, TOROW(column_indexes), 0)),
+   _Included, FILTER(_Seq, _Keep, TRUE),
+   _Result, CHOOSECOLS(array, _Included),
+   _Result
+));

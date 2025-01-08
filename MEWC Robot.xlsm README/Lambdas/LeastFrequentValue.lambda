@@ -1,0 +1,9 @@
+LeastFrequentValue = LAMBDA(array,[exclude], LET(
+   \\LambdaName, "LeastFrequent",
+   _unique, UNIQUE(TOCOL(IF(array = "", "", array))),
+   _include, BYROW(_unique <> TOROW(exclude), LAMBDA(x, PRODUCT(N(x)))),
+   _filtered, IF(ISOMITTED(exclude), _unique, FILTER(_unique, _include)),
+   _countif, MAP(_filtered, LAMBDA(x, SUM(N(array = x)))),
+   Result, TAKE(SORTBY(_filtered, _countif, 1), 1),
+   Result
+));

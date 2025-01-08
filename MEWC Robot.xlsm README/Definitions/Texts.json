@@ -1,0 +1,77 @@
+{
+  "Texts": [
+    {
+      "Name": "FilterArray.lambda",
+      "Description": "Definition of FilterArray lambda function.",
+      "Type": "ExcelNameText",
+      "Value": "FilterArray =     LAMBDA(data,column_indexes,filter_values,LET(\n   \\\\LambdaName, \"FilterArray\",\nFILTER(data,BYROW(IsInList(CHOOSECOLS(data,column_indexes),filter_values),LAMBDA(x,AND(x)))))\n);",
+      "Location": "FilterArray",
+      "SourceCredit": "@ExcelRobot",
+      "MarkdownId": "FilterArraylambda"
+    },
+    {
+      "Name": "GroupByFirstNColumns.lambda",
+      "Description": "Definition of GroupByFirstNColumns lambda function.",
+      "Type": "ExcelNameText",
+      "Value": "GroupByFirstNColumns =  LAMBDA(array,[n],[include_grand_total],[aggregate_function], LET(\n   \\\\LambdaName, \"GroupByFirstNColumns\",\n   n, IF(ISOMITTED(n), 1, n),\n   include_grand_total, IF(\n      ISOMITTED(include_grand_total),\n      0,\n      include_grand_total\n   ),\n   aggregate_function, IF(\n      ISOMITTED(aggregate_function),\n      SUM,\n      aggregate_function\n   ),\n   _RowFields, TAKE(array, , n),\n   _Values, DROP(array, , n),\n   _Result, GROUPBY(\n      _RowFields,\n      _Values,\n      aggregate_function,\n      0,\n      include_grand_total\n   ),\n   _Result\n));",
+      "Location": "GroupByFirstNColumns",
+      "SourceCredit": "@ExcelRobot"
+    },
+    {
+      "Name": "InsertCols.lambda",
+      "Description": "Definition of InsertCols lambda function.",
+      "Type": "ExcelNameText",
+      "ContentType": "ExcelFormula",
+      "Value": "InsertCols =  LAMBDA(array,columns_to_insert,[column_index],[pad_with], LET(\n   \\\\LambdaName, \"InsertCols\",\n   \\\\CommandName, \"Insert Columns Into Array\",\n   \\\\Description, \"Given an array, inserts a second array at a specified column index.\",\n   \\\\Parameters, {\"array\",\"the target array within which columns will be inserted\";\"columns_to_insert\",\"an array with one or more columns of data to be inserted in target array\";\"[column_index]\",\"column index location where columns will be inserted; if negative, counts from the right; if zero (default), columns will be appended to right\";\"[pad_with]\",\"what to fill blanks with if columns to insert has different number of rows than array; default: #N/A\"},\n   \\\\Source, \"Excel Robot (@ExcelRobot)\",\n   _PadWith, IF(ISOMITTED(pad_with), NA(), pad_with),\n   _Array, IF(\n      ROWS(columns_to_insert) > ROWS(array),\n      EXPAND(array, ROWS(columns_to_insert), , _PadWith),\n      array\n   ),\n   _ColumnsToInsert, IF(\n      ROWS(_Array) > ROWS(columns_to_insert),\n      EXPAND(columns_to_insert, ROWS(_Array), , _PadWith),\n      columns_to_insert\n   ),\n   _ColumnIndex, IF(@column_index < 0, MAX(1, COLUMNS(_Array) + @column_index + 1), @column_index),\n   IFS(\n      _ColumnIndex = 1,\n      HSTACK(_ColumnsToInsert, _Array),\n      OR(_ColumnIndex <= 0, _ColumnIndex > COLUMNS(_Array)),\n      HSTACK(_Array, _ColumnsToInsert),\n      TRUE,\n      HSTACK(TAKE(_Array, , _ColumnIndex - 1), _ColumnsToInsert, DROP(_Array, , _ColumnIndex - 1))\n   )\n));",
+      "Location": "InsertCols",
+      "SourceCredit": "@ExcelRobot"
+    },
+    {
+      "Name": "IsInList.lambda",
+      "Description": "Definition of IsInList lambda function.",
+      "Type": "ExcelNameText",
+      "Value": "IsInList =     LAMBDA(array,list,LET(\n   \\\\LambdaName, \"IsInList\",\nMAP(array,LAMBDA(x,OR(list=x))))\n);",
+      "Location": "IsInList",
+      "SourceCredit": "@ExcelRobot",
+      "MarkdownId": "IsInListlambda"
+    },
+    {
+      "Name": "LeastFrequentValue.lambda",
+      "Description": "Definition of LeastFrequentValue lambda function.",
+      "Type": "ExcelNameText",
+      "ContentType": "ExcelLambda",
+      "Value": "LeastFrequentValue =  LAMBDA(array,[exclude], LET(\n   \\\\LambdaName, \"LeastFrequent\",\n   _unique, UNIQUE(TOCOL(IF(array = \"\", \"\", array))),\n   _include, BYROW(_unique <> TOROW(exclude), LAMBDA(x, PRODUCT(N(x)))),\n   _filtered, IF(ISOMITTED(exclude), _unique, FILTER(_unique, _include)),\n   _countif, MAP(_filtered, LAMBDA(x, SUM(N(array = x)))),\n   Result, TAKE(SORTBY(_filtered, _countif, 1), 1),\n   Result\n));",
+      "Location": "LeastFrequentValue",
+      "SourceCredit": "@ExcelRobot",
+      "MarkdownId": "MostFrequentValuelambda"
+    },
+    {
+      "Name": "MostFrequentValue.lambda",
+      "Description": "Definition of MostFrequentValue lambda function.",
+      "Type": "ExcelNameText",
+      "ContentType": "ExcelLambda",
+      "Value": "MostFrequentValue =  LAMBDA(array,[exclude], LET(\n   \\\\LambdaName, \"MostFrequentValue\",\n   \\\\CommandName, \"Most Frequent Value\",\n   \\\\Description, \"Returns the most frequent value in an array.\",\n   _unique, UNIQUE(TOCOL(IF(array = \"\", \"\", array))),\n   _include, BYROW(_unique <> TOROW(exclude), LAMBDA(x, PRODUCT(N(x)))),\n   _filtered, IF(ISOMITTED(exclude), _unique, FILTER(_unique, _include)),\n   _countif, MAP(_filtered, LAMBDA(x, SUM(N(array = x)))),\n   Result, TAKE(SORTBY(_filtered, _countif, -1), 1),\n   Result\n));",
+      "Location": "MostFrequentValue",
+      "SourceCredit": "@ExcelRobot",
+      "MarkdownId": "MostFrequentValuelambda"
+    },
+    {
+      "Name": "RemoveCols.lambda",
+      "Description": "Definition of RemoveCols lambda function.",
+      "Type": "ExcelNameText",
+      "ContentType": "ExcelFormula",
+      "Value": "RemoveCols =  LAMBDA(array,column_indexes, LET(\n   \\\\LambdaName, \"RemoveCols\",\n   \\\\CommandName, \"Remove Columns Of Array\",\n   \\\\Description, \"Removes specified columns of array using RemoveCols lambda.\",\n   _Seq, SEQUENCE(COLUMNS(array)),\n   _Keep, ISERROR(MATCH(_Seq, TOROW(column_indexes), 0)),\n   _Included, FILTER(_Seq, _Keep, TRUE),\n   _Result, CHOOSECOLS(array, _Included),\n   _Result\n));",
+      "Location": "RemoveCols",
+      "SourceCredit": "@ExcelRobot"
+    },
+    {
+      "Name": "UngroupColumn.lambda",
+      "Description": "Definition of UngroupColumn lambda function.",
+      "Type": "ExcelNameText",
+      "ContentType": "ExcelFormula",
+      "Value": "UngroupColumn = LAMBDA(data,[column_index],[delimiter], LET(\n   \\\\LambdaName, \"UngroupColumn\",\n   _ColIndex, IF(\n      OR(ISOMITTED(column_index), ISBLANK(column_index), column_index = \"\"),\n      COLUMNS(data),\n      column_index\n   ),\n   _Delim, IF(\n      OR(ISOMITTED(delimiter), ISBLANK(delimiter), delimiter = \"\"),\n      \",\",\n      delimiter\n   ),\n   _Rows, ROWS(data),\n   _Cols, COLUMNS(data),\n   _Keys, IF(_ColIndex = _Cols, DROP(data, , -1), RemoveCols(data, _ColIndex)),\n   _Values, CHOOSECOLS(data, _ColIndex),\n   _Result, REDUCE(\n      \"\",\n      SEQUENCE(_Rows),\n      LAMBDA(acc,r, LET(\n         key, CHOOSEROWS(_Keys, r),\n         valueList, TEXTSPLIT(INDEX(_Values, r, 1), , _Delim),\n         trimmed, TRIM(valueList),\n         keyCols, MAKEARRAY(\n            ROWS(trimmed),\n            COLUMNS(key),\n            LAMBDA(row,col, INDEX(key, 1, col))\n         ),\n         pairs, IF(\n            _ColIndex = _Cols,\n            HSTACK(keyCols, trimmed),\n            InsertCols(keyCols, trimmed, _ColIndex)\n         ),\n         IF(@acc = \"\", pairs, VSTACK(acc, pairs))\n      ))\n   ),\n   _Result\n));",
+      "Location": "UngroupColumn",
+      "SourceCredit": "@ExcelRobot"
+    }
+  ]
+}

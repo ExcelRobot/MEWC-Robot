@@ -1,0 +1,24 @@
+GroupByFirstNColumns = LAMBDA(array,[n],[include_grand_total],[aggregate_function], LET(
+   \\LambdaName, "GroupByFirstNColumns",
+   n, IF(ISOMITTED(n), 1, n),
+   include_grand_total, IF(
+      ISOMITTED(include_grand_total),
+      0,
+      include_grand_total
+   ),
+   aggregate_function, IF(
+      ISOMITTED(aggregate_function),
+      SUM,
+      aggregate_function
+   ),
+   _RowFields, TAKE(array, , n),
+   _Values, DROP(array, , n),
+   _Result, GROUPBY(
+      _RowFields,
+      _Values,
+      aggregate_function,
+      0,
+      include_grand_total
+   ),
+   _Result
+));
